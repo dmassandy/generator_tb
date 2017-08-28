@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="UW_WORKSHEET_FORM" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ddc3bb57-ee25-4773-97a0-90aa2820b4d8">
 	<property name="ireport.zoom" value="1.5"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.x" value="219"/>
+	<property name="ireport.y" value="1256"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="0.0" lineColor="#000000"/>
@@ -172,7 +172,7 @@
 				<text><![CDATA[OPID]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="31" y="0" width="109" height="20" uuid="84bd82c2-a905-4257-87d4-5b11655fb1aa"/>
+				<reportElement x="31" y="0" width="145" height="20" uuid="84bd82c2-a905-4257-87d4-5b11655fb1aa"/>
 				<textFieldExpression><![CDATA[$F{printDate}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -484,7 +484,9 @@
 						<jr:detailCell style="table_TD" height="28" rowSpan="1">
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="96" height="28" uuid="a841a57e-d94b-4bf1-a554-8ade8fe022c6"/>
-								<textElement textAlignment="Left" verticalAlignment="Middle"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font isBold="true" pdfFontName="Helvetica-Bold"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{givenName} + ", " + $F{surname}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -493,7 +495,9 @@
 						<jr:detailCell style="table_TD" height="28" rowSpan="1">
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="93" height="28" uuid="2418a7b4-e92e-4d17-bdea-15dc84904808"/>
-								<textElement textAlignment="Left" verticalAlignment="Middle"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font isBold="true" pdfFontName="Helvetica-Bold"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{lifeClientNumber}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -502,7 +506,9 @@
 						<jr:detailCell style="table_TD" height="28" rowSpan="1">
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="50" height="28" uuid="1f658e6f-27c6-47af-8566-ed79b6627189"/>
-								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true" pdfFontName="Helvetica-Bold"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -523,7 +529,9 @@
 						<jr:detailCell style="table_TD" height="28" rowSpan="1">
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="66" height="28" uuid="f6bb4da7-00d5-48aa-85f2-931042fbc1a3"/>
-								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true" pdfFontName="Helvetica-Bold"/>
+								</textElement>
 								<textFieldExpression><![CDATA[$F{lifeClientNo}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
@@ -590,7 +598,7 @@
 			<line>
 				<reportElement x="1" y="48" width="554" height="1" forecolor="#BE0E1F" uuid="95229690-bef1-455d-ab7f-23539b85657d"/>
 				<graphicElement>
-					<pen lineWidth="1.5" lineStyle="Dashed"/>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
 				</graphicElement>
 			</line>
 			<staticText>
@@ -675,11 +683,11 @@
 				</graphicElement>
 			</line>
 		</band>
-		<band height="153">
+		<band height="149">
 			<line>
 				<reportElement x="0" y="69" width="554" height="1" forecolor="#BE0E1F" uuid="b55e88c7-9f36-4153-bd35-e7416d4274b6"/>
 				<graphicElement>
-					<pen lineWidth="1.5" lineStyle="Dashed"/>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
 				</graphicElement>
 			</line>
 			<componentElement>
@@ -850,10 +858,10 @@
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="57" uuid="40c8b719-f097-42bd-872d-26db074dd0e0">
+					<jr:column width="38" uuid="40c8b719-f097-42bd-872d-26db074dd0e0">
 						<jr:columnHeader height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="57" height="30" uuid="9456c728-c0a5-488b-be5b-e432609e30a7"/>
+								<reportElement x="0" y="0" width="38" height="30" uuid="9456c728-c0a5-488b-be5b-e432609e30a7"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
@@ -862,7 +870,7 @@
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="20" rowSpan="1">
 							<textField isBlankWhenNull="true">
-								<reportElement x="0" y="0" width="57" height="20" uuid="4f2b37a7-5461-4e6c-94ba-24d8537bedb5"/>
+								<reportElement x="0" y="0" width="38" height="20" uuid="4f2b37a7-5461-4e6c-94ba-24d8537bedb5"/>
 								<textElement textAlignment="Right" verticalAlignment="Middle"/>
 								<textFieldExpression><![CDATA[$F{singlePremium}]]></textFieldExpression>
 							</textField>
@@ -880,10 +888,10 @@
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="20" rowSpan="1"/>
 					</jr:column>
-					<jr:column width="37" uuid="4b6f49b0-774e-44cc-af9f-3b5aea0a21d3">
+					<jr:column width="47" uuid="4b6f49b0-774e-44cc-af9f-3b5aea0a21d3">
 						<jr:columnHeader height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="37" height="30" uuid="80116322-7067-4f9f-9416-4a77533d5830"/>
+								<reportElement x="0" y="0" width="47" height="30" uuid="80116322-7067-4f9f-9416-4a77533d5830"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
@@ -892,10 +900,10 @@
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="20" rowSpan="1"/>
 					</jr:column>
-					<jr:column width="36" uuid="59c34cc1-ead9-473d-8f81-7324cb719b77">
+					<jr:column width="46" uuid="59c34cc1-ead9-473d-8f81-7324cb719b77">
 						<jr:columnHeader height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="36" height="30" uuid="392e034f-837a-4198-878a-e2f6e87e46e9"/>
+								<reportElement x="0" y="0" width="46" height="30" uuid="392e034f-837a-4198-878a-e2f6e87e46e9"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
@@ -979,7 +987,7 @@
 				<textFieldExpression><![CDATA[$F{discountPrem}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="228" y="133" width="125" height="20" uuid="9e7c1e52-c981-414d-82ff-5c3bd1840f47"/>
+				<reportElement x="228" y="133" width="125" height="16" uuid="9e7c1e52-c981-414d-82ff-5c3bd1840f47"/>
 				<text><![CDATA[LP S1 Premium]]></text>
 			</staticText>
 			<staticText>
@@ -1136,7 +1144,7 @@
 				</jr:table>
 			</componentElement>
 		</band>
-		<band height="261">
+		<band height="240">
 			<line>
 				<reportElement x="1" y="2" width="554" height="1" forecolor="#BE0E1F" uuid="e4311bdc-025f-4f3a-8047-8071d879f583"/>
 				<graphicElement>
@@ -1182,7 +1190,7 @@
 				<textFieldExpression><![CDATA[$F{occupationUW}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="19" y="26" width="334" height="178" uuid="a50476e6-6878-4b21-8e49-b78c975ccd6e"/>
+				<reportElement x="19" y="26" width="334" height="155" uuid="a50476e6-6878-4b21-8e49-b78c975ccd6e"/>
 				<textElement textAlignment="Justified"/>
 				<textFieldExpression><![CDATA[$F{notes}]]></textFieldExpression>
 			</textField>
@@ -1192,14 +1200,14 @@
 				<textFieldExpression><![CDATA["Date " + $F{currentDate}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="19" y="208" width="100" height="20" uuid="dcf3dd16-8be3-4147-a0e1-b70fcad544a4"/>
+				<reportElement x="19" y="195" width="100" height="20" uuid="dcf3dd16-8be3-4147-a0e1-b70fcad544a4"/>
 				<textElement>
 					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
 				</textElement>
 				<text><![CDATA[Note for NB:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="19" y="227" width="100" height="20" uuid="c2e2b649-95e0-4a42-af45-cc4a310f3e59"/>
+				<reportElement x="19" y="214" width="100" height="20" uuid="c2e2b649-95e0-4a42-af45-cc4a310f3e59"/>
 				<textElement>
 					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
 				</textElement>
@@ -1233,13 +1241,13 @@
 				<text><![CDATA[Issued By]]></text>
 			</staticText>
 			<rectangle>
-				<reportElement x="373" y="181" width="80" height="66" uuid="4c3690b3-c0f2-4cc6-a2ff-210d356d2e3c"/>
+				<reportElement x="373" y="181" width="80" height="53" uuid="4c3690b3-c0f2-4cc6-a2ff-210d356d2e3c"/>
 			</rectangle>
 			<rectangle>
-				<reportElement x="453" y="181" width="80" height="66" uuid="83e29a22-1e8c-495a-ae35-8ed750aa7378"/>
+				<reportElement x="453" y="181" width="80" height="53" uuid="83e29a22-1e8c-495a-ae35-8ed750aa7378"/>
 			</rectangle>
 			<break>
-				<reportElement x="0" y="259" width="100" height="1" uuid="49eca754-9ea2-40ba-99a7-e71bce0efb83"/>
+				<reportElement x="0" y="236" width="100" height="1" uuid="49eca754-9ea2-40ba-99a7-e71bce0efb83"/>
 			</break>
 		</band>
 		<band height="120">
@@ -1258,18 +1266,18 @@
 				<text><![CDATA[History of Client Policy]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="302" y="5" width="113" height="32" uuid="688cf430-1ef7-4ee1-8379-e7046ca53e0d"/>
+				<reportElement x="302" y="5" width="98" height="32" uuid="688cf430-1ef7-4ee1-8379-e7046ca53e0d"/>
 				<textElement verticalAlignment="Middle">
 					<font size="16" isBold="true" pdfFontName="Helvetica-Bold"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{policyNo}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="421" y="11" width="33" height="20" uuid="b6408571-db2c-4a1c-a84d-f7aa5f49c5b4"/>
+				<reportElement x="403" y="11" width="33" height="20" uuid="b6408571-db2c-4a1c-a84d-f7aa5f49c5b4"/>
 				<text><![CDATA[Date:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="455" y="11" width="100" height="20" uuid="5851d77a-9693-4c28-b47e-e2d9238e3d99"/>
+				<reportElement x="436" y="11" width="119" height="20" uuid="5851d77a-9693-4c28-b47e-e2d9238e3d99"/>
 				<textFieldExpression><![CDATA[$F{printDate}]]></textFieldExpression>
 			</textField>
 			<staticText>
