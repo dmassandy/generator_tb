@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="UW_WORKSHEET_FORM" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ddc3bb57-ee25-4773-97a0-90aa2820b4d8">
-	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.zoom" value="2.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="160"/>
+	<property name="ireport.y" value="0"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="0.0" lineColor="#000000"/>
@@ -166,28 +166,28 @@
 	<title>
 		<band height="56" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="19" height="15" uuid="f905d83d-2d15-4b3a-be04-6b5fbed37a39"/>
+				<reportElement x="0" y="0" width="28" height="15" uuid="f905d83d-2d15-4b3a-be04-6b5fbed37a39"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[Date]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="15" width="19" height="15" uuid="24fdbcd3-f8a5-4a07-89d8-e5fed13ca916"/>
+				<reportElement x="0" y="15" width="28" height="15" uuid="24fdbcd3-f8a5-4a07-89d8-e5fed13ca916"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[OPID]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="22" y="0" width="97" height="15" uuid="84bd82c2-a905-4257-87d4-5b11655fb1aa"/>
+				<reportElement x="28" y="0" width="97" height="15" uuid="84bd82c2-a905-4257-87d4-5b11655fb1aa"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{printDate}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="22" y="15" width="46" height="15" uuid="3818359b-8325-4ba5-a514-0271192896ac"/>
+				<reportElement x="28" y="15" width="46" height="15" uuid="3818359b-8325-4ba5-a514-0271192896ac"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
