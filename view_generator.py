@@ -1,4 +1,8 @@
 import os
+import csv
+import re
+
+pattern_to_replc = re.compile('[^A-Za-z0-9_]')
 
 class DataSource:
     def __init__(self):
@@ -46,7 +50,8 @@ class DataCol:
         self.null_value = None
     
     def get_column_name_as_norm(self):
-        return self.column_name_as.upper().replace(" ", "_")
+        return re.sub(pattern_to_replc, '', self.column_name_as.strip().upper().replace(" ", "_"))
+        # return self.column_name_as.upper().replace(" ", "_")
 
 def getDS(key, source_list):
     result = None
@@ -107,7 +112,7 @@ def print_query(report_name, data, source_list, table_abbrv_map):
         if d.table and ds is not None:
             ds_table_abbrv = table_abbrv_map[d.table.lower()]
 
-            result_cols += "\t\""+ds_table_abbrv.table_abbrv+"\".\""+d.column_name+"\" AS " + d.get_column_name_as_norm()+",\n"
+            result_cols += "\t"+ds_table_abbrv.table_abbrv+"."+d.column_name+" AS " + d.get_column_name_as_norm()+",\n"
         elif 'calculated' in source_lower:
             result_cols += "\t'CALCULATED_FIELD' AS " + d.get_column_name_as_norm()+",\n"
         elif 'manual' in source_lower:
@@ -129,15 +134,44 @@ def print_query(report_name, data, source_list, table_abbrv_map):
     return result_str
 
 def read_data(csv_file_path):
-    pass
+    report_mapping = {}
+    with open(csv_file_path, 'rb') as f :
+        reader = csv.reader(f)
+        current_report_name = None
+        current_report = None
+        for row in reader:
+            if row[0] != '':
+                # save prev report
+                if current_report_name:
+                    report_mapping[current_report_name] = current_report
+                # new report
+                current_report_name = row[0]
+                current_report = []
+                # print(current_report_name)
+                continue
+            elif row[0] == '' and row[1] == '':
+                # break before new report
+                continue
+            else:
+                d1 = DataCol()
+                d1.column_name_as = row[1].strip()
+                d1.source = row[3].strip()
+                d1.column_name = row[4].strip()
+                d1.table = row[5].strip()
+                current_report.append(d1)
+        if current_report_name:
+            report_mapping[current_report_name] = current_report
+    return report_mapping
 
 def write_sql_file(view_table_name, output_dir, sql) :
     file_path = os.path.join(output_dir, view_table_name + ".sql")
+    print('writing to ' + file_path)
     with open(file_path, "w") as f :
         f.write(sql)
 
 if __name__ == "__main__":
-    output_dir = "result"
+    input_dir = "input"
+    output_dir = "output"
     
     source_list = []
     cm_source = DataSource()
@@ -154,35 +188,52 @@ if __name__ == "__main__":
     cm_source1.addDS('LifeAsia')
     source_list.append(cm_source1)
 
-    report_name = "test123"
+    # report_name = "test123"
 
-    view_table_name = "VW_MI_" + report_name
+    # view_table_name = "VW_MI_" + report_name
 
-    data = []
-    d1 = DataCol()
-    d1.column_name = 'NO'
-    d1.column_name_as = 'No'
-    d1.source = 'CM'
-    d1.table = 'ABC'
+    # data = []
+    # d1 = DataCol()
+    # d1.column_name = 'NO'
+    # d1.column_name_as = 'No'
+    # d1.source = 'CM'
+    # d1.table = 'ABC'
 
-    d2 = DataCol()
-    d2.column_name = 'NAME'
-    d2.column_name_as = 'Name 1'
-    d2.source = 'CM'
-    d2.table = 'BCD'
+    # d2 = DataCol()
+    # d2.column_name = 'NAME'
+    # d2.column_name_as = 'Name 1'
+    # d2.source = 'CM'
+    # d2.table = 'BCD'
 
-    d3 = DataCol()
-    d3.column_name = 'DATA'
-    d3.column_name_as = 'Data A'
-    d3.source = 'LifeAsia'
-    d3.table = 'AD'
+    # d3 = DataCol()
+    # d3.column_name = 'DATA'
+    # d3.column_name_as = 'Data A'
+    # d3.source = 'LifeAsia'
+    # d3.table = 'AD'
 
-    data.append(d1)
-    data.append(d2)
-    data.append(d3)    
+    # data.append(d1)
+    # data.append(d2)
+    # data.append(d3)    
 
-    table_abbrv = getTableAbbrv(data, source_list)
+    # table_abbrv = getTableAbbrv(data, source_list)
     # print(table_abbrv)
 
-    sql = print_query(report_name, data, source_list, table_abbrv)
-    write_sql_file(view_table_name, output_dir, sql)
+    # sql = print_query(report_name, data, source_list, table_abbrv)
+    # write_sql_file(view_table_name, output_dir, sql)
+
+    report_mapping = {}
+    onlyfiles = [f for f in os.listdir(input_dir) if os.path.isfile(os.path.join(input_dir, f))]
+    for f in onlyfiles:
+        fpath = os.path.join(input_dir, f)
+        print('====='+fpath+'=====')
+        res_mapping = read_data(fpath)
+        report_mapping.update(res_mapping)
+        print('=====')
+
+    for key, data_list in report_mapping.iteritems():
+        print(key)
+        table_abbrv = getTableAbbrv(data_list, source_list)
+        report_name = key.upper().replace(" ", "_")
+        view_table_name = "VW_MI_" + report_name
+        sql = print_query(report_name, data_list, source_list, table_abbrv)
+        write_sql_file(view_table_name, output_dir, sql)

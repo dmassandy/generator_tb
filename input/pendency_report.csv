@@ -1,0 +1,92 @@
+NB Pendency Report,,,,,
+,Policy No,,CM,NUMBER,PLANS
+,Source,,CM,SOURCE,WORKITEMS
+,Location,,CM,REGION_CODE ,PLANS
+,Business,,CM,LOB,WORKITEMS
+,Plan Code,,LifeAsia/TBD,,
+,Advisor Name,,LifeAsia/TBD,,
+,Firm Name,,LifeAsia,AGENTNAME,CONTRACT
+,Owner,,LifeAsia,PROPOSALNAME,CONTRACT
+,Life Assured,,LifeAsia,LIFEGIVENNAME,UWWORKSHEET
+,Policy Status,,LifeAsia,CONTRACTSTATUS,CONTRACT
+,Start Time,,System generated,DATE_CREATED,WORKITEMS
+,Upload Time,,System generated,DATE_CREATED,WORKITEMS
+,Proposal Sign Date,,LifeAsia,PROPOSALSIGNEDDATE,CONTRACT
+,Proposal Receive Date,,LifeAsia,PROPOSALRECEIVEDDATE,CONTRACT
+,Last Activity,latest queue in a workitem,System generated,TASK_NAME,VW_QUEUES_TOP
+,Last User,latest queue in a workitem,CM,MODIFIED_BY,VW_QUEUES_TOP
+,User Action Date,,System generated,DATE_MODIFIED ,VW_QUEUES_TOP
+,NTU Date,,CM,NTU_DATE,VW_QUEUES_TOP
+,Resume Date,Date Created of Suspened Task,Calculated field / TBD,,
+,Reason,,Manual CM,,
+,Pend Period,,Calculated field,,
+,Ageing,,Calculated field,,
+,No,Serial No,System generated / TBD,,
+,Proposal number,,LifeAsia,APPLICATIONNO,CONTRACT_STATUS
+,Policy owner,Policy Holder Name,LifeAsia / duplicate with owner,,
+,Product name,,LifeAsia / TBD,,
+,Status (UW),Task Status,CM,STATUS,VW_QUEUES_TOP
+,"Pending code status(R or W)",Task Status,CM / TBD,,
+,Sum assured,,LifeAsia,SUMASSURED,UWWORKSHEET
+,Total premium,,LifeAsia,SINGLEPREMIUM,UWWORKSHEET
+,Receive time,,Duplicate and will be removed,,
+,Pending time,,Duplicate and will be removed,,
+,Agent number,Agent Contact Number,LifeAsia,COMMISSIONAGENTNO,CONTRACT
+,Agent name,,LifeAsia,AGENTNAME,CONTRACT
+,Distribution channel,,LifeAsia/TBD,,
+,Status,WI Status,CM,STATUS,WORKITEMS
+,NTU time,,Duplicate and will be removed,,
+,Remain time,due date - today?,TBD,,
+,Pending Reason,,Duplicate and will be removed,,
+,EXC_PARAM_REGION,,CM,REGION_CODE,PLANS
+,EXC_PARAM_PERIOD,,CM,DATE_CREATED,VW_QUEUES_TOP
+,,,,,
+PS Pendency Report,,,,,
+,Policy No,,CM,NUMBER,PLANS
+,Source,,CM,SOURCE,WORKITEMS
+,Location,,CM,REGION_CODE ,PLANS
+,Business,,CM,LOB,WORKITEMS
+,Plan Code,,LifeAsia / TBD,,
+,Transaction Name,Transaction Type,CM,TRANSACTION_TYPE ,WORKITEMS
+,Owner,Policy Holder Name,LifeAsia,PROPOSALNAME,CONTRACT
+,Agent Name,Agent Name,LifeAsia,AGENTNAME,CONTRACT
+,Life Assured,Life Assured Name,LifeAsia,LIFEGIVENNAME,UWWORKSHEET
+,Start Time,WI Create Date,System generated,DATE_CREATED,WORKITEMS
+,Process Status,WI Status,CM,STATUS,WORKITEMS
+,Last User,Modified User - last queue,CM,MODIFIED_BY,VW_QUEUES_TOP
+,User Action Date,Modified Date / Time - last queue,System generated,DATE_MODIFIED ,VW_QUEUES_TOP
+,Last Activity,Last Task - last queue,System generated,TASK_NAME,VW_QUEUES_TOP
+,Pend Period,,Calculated field,,
+,Ageing,,Calculated field,,
+,Resume Date,Date Created of Suspened Task,Calculated field / TBD,,
+,Policy holder name,Policy Holder Name,LifeAsia / duplicate with owner - life assured,,
+,Branch/Region,,LifeAsia,CONTRACTBRANCH,CONTRACT
+,Servicing agent name,,LifeAsia,SERVAGENTNAME,CONTRACT
+,Agent code,,LifeAsia,SERVAGENTNO,CONTRACT
+,Product,,LifeAsia / TBD,,
+,Paid-to-date,,LifeAsia / TBD,,
+,Submitted premium amount,,LifeAsia,SINGLEPREMIUM,UWWORKSHEET
+,Premium receiving date,PS Receive Date,LifeAsia / TBD,,
+,Request receiving date,PS Receive Date,LifeAsia,PROPOSALRECEIVEDDATE,CONTRACT
+,Request type,Trasaction Type,CM,TRANSACTION_TYPE ,WORKITEMS
+,Pending reason,Pending Reason,Manual CM,,
+,Standard Pending period,WI Ageing,Calculated field,,
+,Actual pending time,WI Ageing,Calculated field,,
+,Over TAT day,,Calculated field / TBD,,
+,Pending reasons,,Duplicate and will be removed,,
+,,,,,
+Pendency Report,,,,,
+, No.,Serial No,System generated / TBD,,
+,Policy No.,,CM,NUMBER,PLANS
+,Policy holder name,Policy Holder Name,LifeAsia,LIFEGIVENNAME,UWWORKSHEET
+,Agent name,Agent Name,LifeAsia,AGENTNAME,CONTRACT
+,Agent code,,LifeAsia,COMMISSIONAGENTNO,CONTRACT
+,Branch/Region,,LifeAsia,CONTRACTBRANCH,CONTRACT
+,Source,,CM,SOURCE,WORKITEMS
+,Request type,Trasaction Type,CM,TRANSACTION_TYPE ,WORKITEMS
+,Request receiving date,PS Receive Date,LifeAsia,PROPOSALRECEIVEDDATE,CONTRACT
+,Process status,WI Status,CM,STATUS,WORKITEMS
+,Standard TAT,TAT(Days),System generated / TBD,,
+,Actual process time,WI Ageing,Calculated field,,
+,Over TAT day,Over TAT Day,Calculated field / TBD,,
+,Note,Note / Description,CM,NOTES,DESCRIPTION
