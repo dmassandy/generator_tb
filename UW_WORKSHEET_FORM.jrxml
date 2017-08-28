@@ -316,7 +316,9 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="94" height="20" uuid="54e15a33-d6e4-4580-b4b2-8ded5746abd4"/>
 								<textElement verticalAlignment="Middle"/>
-								<textFieldExpression><![CDATA[$F{givenName} + ", " + $F{surname}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{givenName} != null && $F{surname} != null ? $F{surname} + ", " + $F{givenName} :
+$F{givenName} != null ? $F{givenName} :
+$F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -487,7 +489,9 @@
 								<textElement textAlignment="Left" verticalAlignment="Middle">
 									<font isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
-								<textFieldExpression><![CDATA[$F{givenName} + ", " + $F{surname}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{givenName} != null && $F{surname} != null ? $F{surname} + ", " + $F{givenName} :
+$F{givenName} != null ? $F{givenName} :
+$F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -1053,7 +1057,9 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="173" height="31" uuid="e29bf4ce-8808-4924-ad27-a0dbe37e88f2"/>
 								<textElement textAlignment="Left" verticalAlignment="Middle"/>
-								<textFieldExpression><![CDATA[$F{benGivenName} + ", " + $F{benSurname}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{benGivenName} != null && $F{benSurname} != null ? $F{benSurname} + ", " + $F{benGivenName} :
+$F{benGivenName} != null ? $F{benGivenName} :
+$F{benSurname} != null ? $F{benSurname} : ""]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
