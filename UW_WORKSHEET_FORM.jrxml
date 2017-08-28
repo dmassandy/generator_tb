@@ -273,9 +273,9 @@
 		</band>
 	</title>
 	<detail>
-		<band height="262" splitType="Stretch">
+		<band height="241" splitType="Stretch">
 			<componentElement>
-				<reportElement key="policyHolderTable" x="0" y="5" width="555" height="139" forecolor="#FFFFFF" uuid="99732a32-5994-4e81-b7e4-23baa744ec57"/>
+				<reportElement key="policyHolderTable" x="0" y="5" width="555" height="117" forecolor="#FFFFFF" uuid="99732a32-5994-4e81-b7e4-23baa744ec57"/>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
 					<datasetRun subDataset="PolicyHolderDataset" uuid="2d4cfc32-a418-4d96-b2b8-d3cf24a26c5a">
 						<dataSourceExpression><![CDATA[$P{policyHolders}]]></dataSourceExpression>
@@ -340,10 +340,10 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="59" uuid="1318f6e5-ea5f-486d-90af-12facb0d9066">
+					<jr:column width="65" uuid="1318f6e5-ea5f-486d-90af-12facb0d9066">
 						<jr:columnHeader height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="59" height="30" uuid="0fc7a56f-80e5-46a6-bd28-1d6982772d50"/>
+								<reportElement x="0" y="0" width="65" height="30" uuid="0fc7a56f-80e5-46a6-bd28-1d6982772d50"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font isStrikeThrough="false"/>
 								</textElement>
@@ -352,16 +352,16 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 						</jr:columnHeader>
 						<jr:detailCell style="table_TD" height="20" rowSpan="1">
 							<textField isBlankWhenNull="true">
-								<reportElement x="0" y="0" width="59" height="20" uuid="b86f26d0-f1d7-42d8-9481-eee1f2ca0554"/>
+								<reportElement x="0" y="0" width="65" height="20" uuid="b86f26d0-f1d7-42d8-9481-eee1f2ca0554"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle"/>
 								<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="33" uuid="8275044d-02fa-4fd6-9924-94ea96c5bd27">
+					<jr:column width="28" uuid="8275044d-02fa-4fd6-9924-94ea96c5bd27">
 						<jr:columnHeader height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="33" height="30" uuid="d90e3a6d-333f-4bf8-b9fe-a3d6fa7d2ee9"/>
+								<reportElement x="0" y="0" width="28" height="30" uuid="d90e3a6d-333f-4bf8-b9fe-a3d6fa7d2ee9"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font isStrikeThrough="false"/>
 								</textElement>
@@ -370,7 +370,7 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 						</jr:columnHeader>
 						<jr:detailCell style="table_TD" height="20" rowSpan="1">
 							<textField isBlankWhenNull="true">
-								<reportElement x="0" y="0" width="33" height="20" uuid="e4534fa9-59cc-41f6-9fb3-ecb205f805f1"/>
+								<reportElement x="0" y="0" width="28" height="20" uuid="e4534fa9-59cc-41f6-9fb3-ecb205f805f1"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle"/>
 								<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
 							</textField>
@@ -463,7 +463,7 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 				</jr:table>
 			</componentElement>
 			<componentElement>
-				<reportElement key="policyHolderTable" style="table" mode="Opaque" x="0" y="146" width="555" height="31" forecolor="#FFFFFF" uuid="647d554d-ef3a-41df-84e0-b3d50bd056d1"/>
+				<reportElement key="policyHolderTable" style="table" mode="Opaque" x="0" y="125" width="555" height="31" forecolor="#FFFFFF" uuid="647d554d-ef3a-41df-84e0-b3d50bd056d1"/>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
 					<datasetRun subDataset="PolicyOwnerDataset" uuid="96b82441-d6f1-45b8-915e-db3f846209de">
 						<dataSourceExpression><![CDATA[$P{policyOwner}]]></dataSourceExpression>
@@ -506,10 +506,10 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="60" uuid="31b0928d-ad3b-4752-8add-1bfe65752e79">
+					<jr:column width="66" uuid="31b0928d-ad3b-4752-8add-1bfe65752e79">
 						<jr:detailCell style="table_TD" height="28" rowSpan="1">
 							<textField isBlankWhenNull="true">
-								<reportElement x="0" y="0" width="60" height="28" uuid="1f658e6f-27c6-47af-8566-ed79b6627189"/>
+								<reportElement x="0" y="0" width="66" height="28" uuid="1f658e6f-27c6-47af-8566-ed79b6627189"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
@@ -517,7 +517,7 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="38" uuid="c28318cc-e8d7-4efd-9ae9-877d5045204c">
+					<jr:column width="29" uuid="c28318cc-e8d7-4efd-9ae9-877d5045204c">
 						<jr:detailCell style="table_TD" height="28" rowSpan="1"/>
 					</jr:column>
 					<jr:column width="31" uuid="162b8bbe-21ee-4122-ac05-bc68f96f0758">
@@ -546,49 +546,49 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 				</jr:table>
 			</componentElement>
 			<line>
-				<reportElement x="0" y="178" width="555" height="1" forecolor="#BE0E1F" uuid="1c5369bd-c178-45f3-b59a-bb900c0f91af"/>
+				<reportElement x="0" y="157" width="555" height="1" forecolor="#BE0E1F" uuid="1c5369bd-c178-45f3-b59a-bb900c0f91af"/>
 				<graphicElement>
 					<pen lineWidth="1.5" lineStyle="Dashed"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement x="19" y="181" width="100" height="20" uuid="cdf655af-14b1-4e02-9d02-77ca0933fbba"/>
+				<reportElement x="19" y="160" width="100" height="20" uuid="cdf655af-14b1-4e02-9d02-77ca0933fbba"/>
 				<text><![CDATA[DESPNUM:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="19" y="207" width="100" height="20" uuid="a0820a6e-feee-4462-bec2-2c592ca033fb"/>
+				<reportElement x="19" y="186" width="100" height="20" uuid="a0820a6e-feee-4462-bec2-2c592ca033fb"/>
 				<textFieldExpression><![CDATA[$F{despNum}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="138" y="181" width="142" height="20" uuid="3a28795e-00ac-4b90-9b81-a418de54b494"/>
+				<reportElement x="138" y="160" width="142" height="20" uuid="3a28795e-00ac-4b90-9b81-a418de54b494"/>
 				<textFieldExpression><![CDATA[$F{address1}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="138" y="201" width="142" height="20" uuid="9a084c50-203c-4be5-a12a-8110b655fca0"/>
+				<reportElement x="138" y="180" width="142" height="20" uuid="9a084c50-203c-4be5-a12a-8110b655fca0"/>
 				<textFieldExpression><![CDATA[$F{address2}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="138" y="221" width="142" height="20" uuid="698aa0dc-5c71-4804-80a5-b0db9a1e9f23"/>
+				<reportElement x="138" y="200" width="142" height="20" isRemoveLineWhenBlank="true" uuid="698aa0dc-5c71-4804-80a5-b0db9a1e9f23"/>
 				<textFieldExpression><![CDATA[$F{address3}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="138" y="241" width="142" height="20" uuid="6d9b2cef-9963-4e42-817e-838d4824ae95"/>
+				<reportElement x="138" y="220" width="142" height="20" isRemoveLineWhenBlank="true" uuid="6d9b2cef-9963-4e42-817e-838d4824ae95"/>
 				<textFieldExpression><![CDATA[$F{address4}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="295" y="181" width="100" height="20" uuid="d6103b65-b481-4cb2-bd3d-326af230b2fb"/>
+				<reportElement x="295" y="160" width="100" height="20" uuid="d6103b65-b481-4cb2-bd3d-326af230b2fb"/>
 				<text><![CDATA[PO Tel:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="295" y="201" width="100" height="20" uuid="2f740f6d-ab99-4fd1-a36c-2a2e51338492"/>
+				<reportElement x="295" y="180" width="100" height="20" uuid="2f740f6d-ab99-4fd1-a36c-2a2e51338492"/>
 				<text><![CDATA[PO Email:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="399" y="181" width="152" height="20" uuid="a38b5cdf-d5b2-4193-88f0-da3dcc6aa009"/>
+				<reportElement x="399" y="160" width="152" height="20" uuid="a38b5cdf-d5b2-4193-88f0-da3dcc6aa009"/>
 				<textFieldExpression><![CDATA[$F{poPhone}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="399" y="201" width="152" height="20" uuid="9e8d2c6f-5023-4815-a26d-a783f0abf804"/>
+				<reportElement x="399" y="180" width="152" height="20" uuid="9e8d2c6f-5023-4815-a26d-a783f0abf804"/>
 				<textFieldExpression><![CDATA[$F{poEmail}]]></textFieldExpression>
 			</textField>
 			<line>
