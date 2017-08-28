@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="UW_WORKSHEET_FORM" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ddc3bb57-ee25-4773-97a0-90aa2820b4d8">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="647"/>
+	<property name="ireport.y" value="432"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="0.0" lineColor="#000000"/>
@@ -164,7 +164,7 @@
 	<field name="topUpPrem" class="java.lang.String"/>
 	<field name="campaignCode" class="java.lang.String"/>
 	<title>
-		<band height="76" splitType="Stretch">
+		<band height="56" splitType="Stretch">
 			<staticText>
 				<reportElement x="0" y="0" width="19" height="15" uuid="f905d83d-2d15-4b3a-be04-6b5fbed37a39"/>
 				<textElement>
@@ -294,14 +294,14 @@
 			<textField>
 				<reportElement x="485" y="0" width="70" height="15" uuid="420d8897-25a3-4098-b7c7-ad599e1cbed9"/>
 				<textElement>
-					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+					<font size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{applicationNo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
 	<detail>
-		<band height="191" splitType="Stretch">
+		<band height="182" splitType="Stretch">
 			<componentElement>
 				<reportElement key="policyHolderTable" x="0" y="5" width="555" height="90" forecolor="#FFFFFF" uuid="99732a32-5994-4e81-b7e4-23baa744ec57"/>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
@@ -519,7 +519,7 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 				</jr:table>
 			</componentElement>
 			<componentElement>
-				<reportElement key="policyHolderTable" style="table" mode="Opaque" x="1" y="95" width="555" height="23" forecolor="#FFFFFF" uuid="647d554d-ef3a-41df-84e0-b3d50bd056d1"/>
+				<reportElement key="policyHolderTable" style="table" mode="Opaque" x="1" y="95" width="555" height="16" forecolor="#FFFFFF" uuid="647d554d-ef3a-41df-84e0-b3d50bd056d1"/>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
 					<datasetRun subDataset="PolicyOwnerDataset" uuid="96b82441-d6f1-45b8-915e-db3f846209de">
 						<dataSourceExpression><![CDATA[$P{policyOwner}]]></dataSourceExpression>
@@ -602,76 +602,76 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 				</jr:table>
 			</componentElement>
 			<line>
-				<reportElement x="0" y="123" width="555" height="1" forecolor="#BE0E1F" uuid="1c5369bd-c178-45f3-b59a-bb900c0f91af"/>
+				<reportElement x="0" y="114" width="555" height="1" forecolor="#BE0E1F" uuid="1c5369bd-c178-45f3-b59a-bb900c0f91af"/>
 				<graphicElement>
 					<pen lineWidth="1.5" lineStyle="Dashed"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement x="19" y="126" width="100" height="15" uuid="cdf655af-14b1-4e02-9d02-77ca0933fbba"/>
+				<reportElement x="19" y="117" width="100" height="15" uuid="cdf655af-14b1-4e02-9d02-77ca0933fbba"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[DESPNUM:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="19" y="152" width="100" height="15" uuid="a0820a6e-feee-4462-bec2-2c592ca033fb"/>
+				<reportElement x="19" y="143" width="100" height="15" uuid="a0820a6e-feee-4462-bec2-2c592ca033fb"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{despNum}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="138" y="126" width="142" height="15" uuid="3a28795e-00ac-4b90-9b81-a418de54b494"/>
+				<reportElement x="138" y="117" width="142" height="15" uuid="3a28795e-00ac-4b90-9b81-a418de54b494"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{address1}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="138" y="142" width="142" height="15" uuid="9a084c50-203c-4be5-a12a-8110b655fca0"/>
+				<reportElement x="138" y="133" width="142" height="15" uuid="9a084c50-203c-4be5-a12a-8110b655fca0"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{address2}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="138" y="158" width="142" height="15" isRemoveLineWhenBlank="true" uuid="698aa0dc-5c71-4804-80a5-b0db9a1e9f23"/>
+				<reportElement x="138" y="149" width="142" height="15" isRemoveLineWhenBlank="true" uuid="698aa0dc-5c71-4804-80a5-b0db9a1e9f23"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{address3}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="138" y="175" width="142" height="15" isRemoveLineWhenBlank="true" uuid="6d9b2cef-9963-4e42-817e-838d4824ae95"/>
+				<reportElement x="138" y="166" width="142" height="15" isRemoveLineWhenBlank="true" uuid="6d9b2cef-9963-4e42-817e-838d4824ae95"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{address4}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="295" y="126" width="100" height="15" uuid="d6103b65-b481-4cb2-bd3d-326af230b2fb"/>
+				<reportElement x="295" y="117" width="100" height="15" uuid="d6103b65-b481-4cb2-bd3d-326af230b2fb"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[PO Tel:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="295" y="142" width="100" height="15" uuid="2f740f6d-ab99-4fd1-a36c-2a2e51338492"/>
+				<reportElement x="295" y="133" width="100" height="15" uuid="2f740f6d-ab99-4fd1-a36c-2a2e51338492"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[PO Email:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="399" y="126" width="152" height="15" uuid="a38b5cdf-d5b2-4193-88f0-da3dcc6aa009"/>
+				<reportElement x="399" y="117" width="152" height="15" uuid="a38b5cdf-d5b2-4193-88f0-da3dcc6aa009"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{poPhone}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="399" y="142" width="152" height="15" uuid="9e8d2c6f-5023-4815-a26d-a783f0abf804"/>
+				<reportElement x="399" y="133" width="152" height="15" uuid="9e8d2c6f-5023-4815-a26d-a783f0abf804"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
@@ -1333,7 +1333,7 @@ $F{benSurname} != null ? $F{benSurname} : ""]]></textFieldExpression>
 				</jr:table>
 			</componentElement>
 		</band>
-		<band height="215">
+		<band height="247">
 			<line>
 				<reportElement x="1" y="2" width="554" height="1" forecolor="#BE0E1F" uuid="e4311bdc-025f-4f3a-8047-8071d879f583"/>
 				<graphicElement>
@@ -1397,7 +1397,7 @@ $F{benSurname} != null ? $F{benSurname} : ""]]></textFieldExpression>
 				<textFieldExpression><![CDATA[$F{occupationUW}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="19" y="21" width="334" height="145" uuid="a50476e6-6878-4b21-8e49-b78c975ccd6e"/>
+				<reportElement x="19" y="21" width="334" height="161" uuid="a50476e6-6878-4b21-8e49-b78c975ccd6e"/>
 				<textElement textAlignment="Justified"/>
 				<textFieldExpression><![CDATA[$F{notes}]]></textFieldExpression>
 			</textField>
@@ -1409,14 +1409,14 @@ $F{benSurname} != null ? $F{benSurname} : ""]]></textFieldExpression>
 				<textFieldExpression><![CDATA["Date " + $F{currentDate}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="19" y="166" width="100" height="16" uuid="dcf3dd16-8be3-4147-a0e1-b70fcad544a4"/>
+				<reportElement x="19" y="190" width="100" height="16" uuid="dcf3dd16-8be3-4147-a0e1-b70fcad544a4"/>
 				<textElement>
 					<font size="10" isBold="true" pdfFontName="Helvetica-Bold"/>
 				</textElement>
 				<text><![CDATA[Note for NB:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="19" y="182" width="100" height="16" uuid="c2e2b649-95e0-4a42-af45-cc4a310f3e59"/>
+				<reportElement x="19" y="206" width="100" height="16" uuid="c2e2b649-95e0-4a42-af45-cc4a310f3e59"/>
 				<textElement>
 					<font size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
 				</textElement>
