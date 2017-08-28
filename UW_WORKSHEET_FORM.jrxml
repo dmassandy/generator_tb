@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="UW_WORKSHEET_FORM" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ddc3bb57-ee25-4773-97a0-90aa2820b4d8">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="545"/>
+	<property name="ireport.y" value="720"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="0.0" lineColor="#000000"/>
@@ -1020,7 +1020,7 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 				</graphicElement>
 			</line>
 			<componentElement>
-				<reportElement key="table 1" style="table 1" x="1" y="5" width="554" height="47" forecolor="#FFFFFF" uuid="cfc53289-9220-4ffb-88da-5cae19a302b0"/>
+				<reportElement key="table 1" style="table 1" x="1" y="5" width="554" height="47" isRemoveLineWhenBlank="true" forecolor="#FFFFFF" uuid="cfc53289-9220-4ffb-88da-5cae19a302b0"/>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
 					<datasetRun subDataset="BeneficiaryDataset" uuid="33798773-102f-429d-a716-f13edca5ef6c">
 						<dataSourceExpression><![CDATA[$P{beneficiaries}]]></dataSourceExpression>
@@ -1150,7 +1150,7 @@ $F{benSurname} != null ? $F{benSurname} : ""]]></textFieldExpression>
 				</jr:table>
 			</componentElement>
 		</band>
-		<band height="240">
+		<band height="208">
 			<line>
 				<reportElement x="1" y="2" width="554" height="1" forecolor="#BE0E1F" uuid="e4311bdc-025f-4f3a-8047-8071d879f583"/>
 				<graphicElement>
@@ -1224,14 +1224,14 @@ $F{benSurname} != null ? $F{benSurname} : ""]]></textFieldExpression>
 				<textFieldExpression><![CDATA["Date " + $F{currentDate}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="19" y="141" width="100" height="20" uuid="dcf3dd16-8be3-4147-a0e1-b70fcad544a4"/>
+				<reportElement x="19" y="134" width="100" height="20" uuid="dcf3dd16-8be3-4147-a0e1-b70fcad544a4"/>
 				<textElement>
 					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
 				</textElement>
 				<text><![CDATA[Note for NB:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="19" y="160" width="100" height="20" uuid="c2e2b649-95e0-4a42-af45-cc4a310f3e59"/>
+				<reportElement x="19" y="153" width="100" height="20" uuid="c2e2b649-95e0-4a42-af45-cc4a310f3e59"/>
 				<textElement>
 					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
 				</textElement>
@@ -1245,30 +1245,30 @@ $F{benSurname} != null ? $F{benSurname} : ""]]></textFieldExpression>
 				<text><![CDATA[Underwriter]]></text>
 			</staticText>
 			<rectangle>
-				<reportElement x="374" y="140" width="80" height="20" uuid="b84503ac-b137-4d3e-8351-62f35f33b79d"/>
+				<reportElement x="374" y="133" width="80" height="20" uuid="b84503ac-b137-4d3e-8351-62f35f33b79d"/>
 			</rectangle>
 			<rectangle>
-				<reportElement x="454" y="140" width="80" height="20" uuid="6372bd6e-167c-443e-a46f-c637a501f702"/>
+				<reportElement x="454" y="133" width="80" height="20" uuid="6372bd6e-167c-443e-a46f-c637a501f702"/>
 			</rectangle>
 			<staticText>
-				<reportElement x="374" y="140" width="80" height="20" uuid="bd03eec5-935e-42c0-8a9b-2be98e2b286f"/>
+				<reportElement x="374" y="133" width="80" height="20" uuid="bd03eec5-935e-42c0-8a9b-2be98e2b286f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
 				</textElement>
 				<text><![CDATA[Checked By]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="454" y="140" width="80" height="20" uuid="7f9efe53-c181-46ff-9bc0-526e5092fdf7"/>
+				<reportElement x="454" y="133" width="80" height="20" uuid="7f9efe53-c181-46ff-9bc0-526e5092fdf7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
 				</textElement>
 				<text><![CDATA[Issued By]]></text>
 			</staticText>
 			<rectangle>
-				<reportElement x="374" y="160" width="80" height="53" uuid="4c3690b3-c0f2-4cc6-a2ff-210d356d2e3c"/>
+				<reportElement x="374" y="153" width="80" height="53" uuid="4c3690b3-c0f2-4cc6-a2ff-210d356d2e3c"/>
 			</rectangle>
 			<rectangle>
-				<reportElement x="454" y="160" width="80" height="53" uuid="83e29a22-1e8c-495a-ae35-8ed750aa7378"/>
+				<reportElement x="454" y="153" width="80" height="53" uuid="83e29a22-1e8c-495a-ae35-8ed750aa7378"/>
 			</rectangle>
 		</band>
 		<band height="120">
