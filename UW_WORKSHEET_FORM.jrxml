@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="UW_WORKSHEET_FORM" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ddc3bb57-ee25-4773-97a0-90aa2820b4d8">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="432"/>
+	<property name="ireport.y" value="160"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="0.0" lineColor="#000000"/>
@@ -369,7 +369,7 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 						<jr:detailCell style="table_TD" height="15" rowSpan="1">
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="86" height="15" uuid="7c12081d-9fa8-4704-9646-2db602463605"/>
-								<textElement verticalAlignment="Middle">
+								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font size="8"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{lifeClientNumber}]]></textFieldExpression>
@@ -555,7 +555,7 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 						<jr:detailCell style="table_TD" height="15" rowSpan="1">
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="84" height="15" uuid="2418a7b4-e92e-4d17-bdea-15dc84904808"/>
-								<textElement textAlignment="Left" verticalAlignment="Middle">
+								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{lifeClientNumber}]]></textFieldExpression>
@@ -713,42 +713,42 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 				<textFieldExpression><![CDATA[$F{billFreq}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="6" y="6" width="24" height="15" uuid="5d2fffec-3ad5-4584-85f1-591a952fdaa2"/>
+				<reportElement x="5" y="6" width="24" height="15" uuid="5d2fffec-3ad5-4584-85f1-591a952fdaa2"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[1]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="6" width="70" height="15" uuid="d2ea82eb-066d-4a8c-bd8d-55eac64ef335"/>
+				<reportElement x="30" y="6" width="70" height="15" uuid="d2ea82eb-066d-4a8c-bd8d-55eac64ef335"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<text><![CDATA[0. Comm]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="101" y="6" width="100" height="15" uuid="0e221d38-433b-46fc-b6ec-b6eaeb1ecbac"/>
+				<reportElement x="100" y="6" width="100" height="15" uuid="0e221d38-433b-46fc-b6ec-b6eaeb1ecbac"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{commissionAgentNo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="201" y="6" width="100" height="15" uuid="e7fa823a-6b0d-4a8f-8e98-6b990ee1d5e2"/>
+				<reportElement x="200" y="6" width="100" height="15" uuid="e7fa823a-6b0d-4a8f-8e98-6b990ee1d5e2"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{commissionAgentGivenName}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="301" y="6" width="100" height="15" uuid="021bb604-6839-47a2-96ad-402d582a541d"/>
+				<reportElement x="300" y="6" width="100" height="15" uuid="021bb604-6839-47a2-96ad-402d582a541d"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{commissionAgentSurname}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="454" y="6" width="100" height="15" uuid="1f92d4dd-a4c4-4b93-860e-8ee9c6c69c43"/>
+				<reportElement x="453" y="6" width="100" height="15" uuid="1f92d4dd-a4c4-4b93-860e-8ee9c6c69c43"/>
 				<textElement>
 					<font size="8" isItalic="true"/>
 				</textElement>
@@ -936,10 +936,10 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="41" uuid="a1f0a120-9681-478d-91b6-e49e7232cc49">
+					<jr:column width="45" uuid="a1f0a120-9681-478d-91b6-e49e7232cc49">
 						<jr:columnHeader height="16" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="41" height="15" uuid="138201ef-c561-4d6f-aa55-b2954e2ed7e1"/>
+								<reportElement x="0" y="0" width="45" height="15" uuid="138201ef-c561-4d6f-aa55-b2954e2ed7e1"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
@@ -948,7 +948,7 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="15" rowSpan="1">
 							<textField isBlankWhenNull="true">
-								<reportElement x="0" y="0" width="41" height="15" uuid="e06c68dd-eadf-4d8d-ab1f-232d9b70972f"/>
+								<reportElement x="0" y="0" width="45" height="15" uuid="e06c68dd-eadf-4d8d-ab1f-232d9b70972f"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font size="8"/>
 								</textElement>
@@ -956,19 +956,19 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="43" uuid="1a3eaa62-a188-41ef-b95b-9605751194bc">
+					<jr:column width="53" uuid="1a3eaa62-a188-41ef-b95b-9605751194bc">
 						<jr:columnHeader height="16" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="43" height="15" uuid="73917df8-0b0f-4987-aebb-ff3a79653922"/>
+								<reportElement x="0" y="0" width="53" height="15" uuid="73917df8-0b0f-4987-aebb-ff3a79653922"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
-								<text><![CDATA[Perm Term]]></text>
+								<text><![CDATA[Prem Term]]></text>
 							</staticText>
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="15" rowSpan="1">
 							<textField isBlankWhenNull="true">
-								<reportElement x="0" y="0" width="43" height="15" uuid="98fb73d8-ad33-4a61-ab6f-ceebc3c4a0fb"/>
+								<reportElement x="0" y="0" width="53" height="15" uuid="98fb73d8-ad33-4a61-ab6f-ceebc3c4a0fb"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font size="8"/>
 								</textElement>
@@ -1016,10 +1016,10 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="42" uuid="d8dd6996-1316-45eb-83ed-a9e580fc91d4">
+					<jr:column width="35" uuid="d8dd6996-1316-45eb-83ed-a9e580fc91d4">
 						<jr:columnHeader height="16" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="42" height="15" uuid="28d308e9-6dc5-4762-941c-eb8be6c14f4a"/>
+								<reportElement x="0" y="0" width="35" height="15" uuid="28d308e9-6dc5-4762-941c-eb8be6c14f4a"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
@@ -1028,22 +1028,22 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="15" rowSpan="1"/>
 					</jr:column>
-					<jr:column width="47" uuid="4b6f49b0-774e-44cc-af9f-3b5aea0a21d3">
+					<jr:column width="42" uuid="4b6f49b0-774e-44cc-af9f-3b5aea0a21d3">
 						<jr:columnHeader height="16" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="47" height="15" uuid="80116322-7067-4f9f-9416-4a77533d5830"/>
+								<reportElement x="0" y="0" width="42" height="15" uuid="80116322-7067-4f9f-9416-4a77533d5830"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
-								<text><![CDATA[% Loading]]></text>
+								<text><![CDATA[%Loading]]></text>
 							</staticText>
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="15" rowSpan="1"/>
 					</jr:column>
-					<jr:column width="46" uuid="59c34cc1-ead9-473d-8f81-7324cb719b77">
+					<jr:column width="34" uuid="59c34cc1-ead9-473d-8f81-7324cb719b77">
 						<jr:columnHeader height="16" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="46" height="15" uuid="392e034f-837a-4198-878a-e2f6e87e46e9"/>
+								<reportElement x="0" y="0" width="34" height="15" uuid="392e034f-837a-4198-878a-e2f6e87e46e9"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
@@ -1052,10 +1052,10 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="15" rowSpan="1"/>
 					</jr:column>
-					<jr:column width="68" uuid="4a311bba-2fce-4f48-8b2a-c8d0d515cc8a">
+					<jr:column width="74" uuid="4a311bba-2fce-4f48-8b2a-c8d0d515cc8a">
 						<jr:columnHeader height="16" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="68" height="15" uuid="7e8c18e2-bf66-4a10-b218-184f7de49504"/>
+								<reportElement x="0" y="0" width="74" height="15" uuid="7e8c18e2-bf66-4a10-b218-184f7de49504"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font size="8" isBold="true" pdfFontName="Helvetica-Bold"/>
 								</textElement>
@@ -1064,7 +1064,7 @@ $F{surname} != null ? $F{surname} : ""]]></textFieldExpression>
 						</jr:columnHeader>
 						<jr:detailCell style="table 2_TD" height="15" rowSpan="1">
 							<textField isBlankWhenNull="true">
-								<reportElement x="0" y="0" width="68" height="15" uuid="9ca2ad41-fe67-4ff8-82ce-b77d39bc67e7"/>
+								<reportElement x="0" y="0" width="74" height="15" uuid="9ca2ad41-fe67-4ff8-82ce-b77d39bc67e7"/>
 								<textElement textAlignment="Right" verticalAlignment="Middle">
 									<font size="8"/>
 								</textElement>
